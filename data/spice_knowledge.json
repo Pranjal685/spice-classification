@@ -1,0 +1,100 @@
+{
+  "black_cardamom": {
+    "display_name": "Black Cardamom",
+    "scientific_name": "Amomum subulatum",
+    "flavor_profile": "Smoky, earthy, and camphor-like.",
+    "common_uses": "Used in savory dishes, curries, and garam masala.",
+    "key_visual_features": "Large, dark brown to black, ribbed outer skin."
+  },
+  "black_pepper": {
+    "display_name": "Black Pepper",
+    "scientific_name": "Piper nigrum",
+    "flavor_profile": "Pungent, spicy, and woody.",
+    "common_uses": "Universal seasoning, marinades, and spice blends.",
+    "key_visual_features": "Small, round, wrinkled black corns."
+  },
+  "cumin": {
+    "display_name": "Cumin",
+    "scientific_name": "Cuminum cyminum",
+    "flavor_profile": "Warm, earthy, and slightly bitter.",
+    "common_uses": "Curries, tempering (tadka), and roasted spice blends.",
+    "key_visual_features": "Small, boat-shaped, ridged brown seeds."
+  },
+  "dagad_phool": {
+    "display_name": "Dagad Phool (Black Stone Flower)",
+    "scientific_name": "Parmotrema perlatum",
+    "flavor_profile": "Mild, woody, and earthy aroma when roasted.",
+    "common_uses": "Meat dishes, biryanis, and goda masala.",
+    "key_visual_features": "Dry, papery, lichen-like appearance with dark and light gray shades."
+  },
+  "dalchini": {
+    "display_name": "Dalchini (Cinnamon/Cassia)",
+    "scientific_name": "Cinnamomum cassia / zeylanicum",
+    "flavor_profile": "Sweet, warm, and woody.",
+    "common_uses": "Desserts, curries, and chai blends.",
+    "key_visual_features": "Curled, reddish-brown bark pieces."
+  },
+  "dhaniya": {
+    "display_name": "Dhaniya (Coriander Seeds)",
+    "scientific_name": "Coriandrum sativum",
+    "flavor_profile": "Citrusy, sweet, and mild.",
+    "common_uses": "Curries, pickles, and ground spice blends.",
+    "key_visual_features": "Round, light brown, ribbed seeds."
+  },
+  "dried_coconut": {
+    "display_name": "Dried Coconut",
+    "scientific_name": "Cocos nucifera",
+    "flavor_profile": "Nutty, rich, and sweet.",
+    "common_uses": "Curry bases, chutneys, and desserts.",
+    "key_visual_features": "White to off-white curved pieces or shreds with a brown outer layer."
+  },
+  "chilli_byadgi": {
+    "display_name": "Byadgi Chilli",
+    "scientific_name": "Capsicum annuum",
+    "flavor_profile": "Mildly spicy, earthy, and imparts bright red color.",
+    "common_uses": "Bisi bele bath, sambar, and colorful curries.",
+    "key_visual_features": "Deep red, long, and wrinkled."
+  },
+  "chilli_guntur": {
+    "display_name": "Guntur Sannam Chilli",
+    "scientific_name": "Capsicum annuum",
+    "flavor_profile": "Very pungent, fiery hot.",
+    "common_uses": "Andhra cuisine, spicy curries.",
+    "key_visual_features": "Bright red, moderately long, and smooth-skinned."
+  },
+  "chilli_lavangi": {
+    "display_name": "Lavangi Chilli",
+    "scientific_name": "Capsicum annuum",
+    "flavor_profile": "Extremely hot and sharp.",
+    "common_uses": "Maharashtrian spicy dishes and Kolhapuri cuisine.",
+    "key_visual_features": "Very small, thin, and bright red."
+  },
+  "chilli_sankeshwari": {
+    "display_name": "Sankeshwari Chilli",
+    "scientific_name": "Capsicum annuum",
+    "flavor_profile": "Moderate to high heat, bright orange-red color.",
+    "common_uses": "Fish curries and coastal Maharashtra cuisine.",
+    "key_visual_features": "Long, orange-red hue, relatively smooth."
+  },
+  "elaichi_pod": {
+    "display_name": "Green Cardamom Pod",
+    "scientific_name": "Elettaria cardamomum",
+    "flavor_profile": "Sweet, floral, and aromatic.",
+    "common_uses": "Desserts, tea, and mild curries.",
+    "key_visual_features": "Small, green, oval-shaped pods."
+  },
+  "elaichi_dana": {
+    "display_name": "Cardamom Seeds (Elaichi Dana)",
+    "scientific_name": "Elettaria cardamomum",
+    "flavor_profile": "Intensely sweet and aromatic.",
+    "common_uses": "Directly added to sweets and spice mixes.",
+    "key_visual_features": "Tiny, sticky, dark brown to black seeds."
+  },
+  "halkund": {
+    "display_name": "Halkund (Whole Turmeric)",
+    "scientific_name": "Curcuma longa",
+    "flavor_profile": "Earthy, slightly bitter, and pungent.",
+    "common_uses": "Ground for general cooking, pickles, and religious ceremonies.",
+    "key_visual_features": "Hard, rough, orange-yellow rhizomes."
+  }
+}

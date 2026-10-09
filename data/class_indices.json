@@ -1,0 +1,34 @@
+{
+  "class_to_idx": {
+    "black_cardamom": 0,
+    "black_pepper": 1,
+    "chilli_byadgi": 2,
+    "chilli_guntur": 3,
+    "chilli_lavangi": 4,
+    "chilli_sankeshwari": 5,
+    "cumin": 6,
+    "dagad_phool": 7,
+    "dalchini": 8,
+    "dhaniya": 9,
+    "dried_coconut": 10,
+    "elaichi_dana": 11,
+    "elaichi_pod": 12,
+    "halkund": 13
+  },
+  "idx_to_class": {
+    "0": "black_cardamom",
+    "1": "black_pepper",
+    "2": "chilli_byadgi",
+    "3": "chilli_guntur",
+    "4": "chilli_lavangi",
+    "5": "chilli_sankeshwari",
+    "6": "cumin",
+    "7": "dagad_phool",
+    "8": "dalchini",
+    "9": "dhaniya",
+    "10": "dried_coconut",
+    "11": "elaichi_dana",
+    "12": "elaichi_pod",
+    "13": "halkund"
+  }
+}

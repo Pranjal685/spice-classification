@@ -1,0 +1,13 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+models/*.pth
+models/*.onnx
+reports/*.png
+.DS_Store
+.env
+.env.local
+data/raw/
+.pytest_cache/

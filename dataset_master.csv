@@ -1,0 +1,386 @@
+file_path,folder_name,class_label,category,sub_category,form,split
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155730.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Elaichi 38/20260409_171802.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160535.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160623.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154523.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160735.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Halkund 35/20260409_171553.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170700.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dalchini(1) 61/20260409_153919.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171805.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Halkund 35/20260409_171403.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Elaichi 38/20260409_171859.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Elaichi 38/20260409_171723.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Cumin 58/20260409_153454.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172205.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Elaichi 38/20260409_171758.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154429.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini(1) 61/20260409_154302.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini 26/20260409_152157.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155110.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173724.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161554.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Halkund 35/20260409_171529.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155429.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173721.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155937.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Halkund 35/20260409_171448.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Halkund 35/20260409_171330.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dalchini(1) 61/20260409_153854.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170819.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155414.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170815.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170846.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161311(0).jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154711.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174616.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170739.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/black pepper 63/20260409_163356.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Cumin 58/20260409_153246.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Dried Coconut 21/20260409_173319.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dried Coconut 21/20260409_173429.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155812.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160658.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153824.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173751.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161357.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Elaichi 38/20260409_171718.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153831.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/black pepper 63/20260409_163121(0).jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172251.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173330.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155118.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Halkund 35/20260409_171505.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Cumin 58/20260409_153357.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173754.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/black pepper 63/20260409_163358.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/black pepper 63/20260409_163552.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dried Coconut 21/20260409_173347.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Halkund 35/20260409_171350.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155635.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170736.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155417.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154258.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155514.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161402.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173407.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Elaichi 38/20260409_171817.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173411.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/black pepper 63/20260409_162858.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Elaichi 38/20260409_171822.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Halkund 35/20260409_171308.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170852.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Halkund 35/20260409_171356.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/black pepper 63/20260409_163243.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161415.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172302.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154306.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154720.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161143.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173617.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160802.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174622.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161242(0).jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160528.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170825.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Cumin 58/20260409_153233.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/black pepper 63/20260409_163145.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/black pepper 63/20260409_163341.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154849.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Halkund 35/20260409_171327.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dried Coconut 21/20260409_173422.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dried Coconut 21/20260409_173415.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Cumin 58/20260409_153558.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155907.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153940.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini(1) 61/20260409_154414.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154930.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170849.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160242.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Halkund 35/20260409_171523.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Elaichi 38/20260409_171946.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Elaichi 38/20260409_171939.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173420.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161612.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170901.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161406.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Halkund 35/20260409_171312.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dalchini(1) 61/20260409_154251.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154859.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/black pepper 63/20260409_163121.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dalchini(1) 61/20260409_154408.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Halkund 35/20260409_171512.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Cumin 58/20260409_153150.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161443.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173519.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dried Coconut 21/20260409_173325.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174532.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Dalchini(1) 61/20260409_153946.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161123.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172358.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154537.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155108.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170841.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dalchini(1) 61/20260409_153904.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Cumin 58/20260409_153446.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Halkund 35/20260409_171438.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dalchini 26/20260409_152219.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171907.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174558.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160810.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155837.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Cumin 58/20260409_153557.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155845.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160553.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Halkund 35/20260409_171400.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Halkund 35/20260409_171445.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155518.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155451.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161142.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161518.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161242.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172138.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dalchini 26/20260409_152301.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini(1) 61/20260409_154333.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dried Coconut 21/20260409_173315.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dalchini(1) 61/20260409_153912.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160539.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Cumin 58/20260409_153553.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172104.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160341.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/black pepper 63/20260409_163235.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dalchini(1) 61/20260409_154331.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172136.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dalchini 26/20260409_152305.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171830.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Elaichi 38/20260409_171835.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173410.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Cumin 58/20260409_153605.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Dalchini 26/20260409_152108.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini 26/20260409_152316.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dalchini(1) 61/20260409_154418.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172107.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dalchini 26/20260409_151949.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171928.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155358.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160632.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Halkund 35/20260409_171451.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160415.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dalchini 26/20260409_152239.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173514.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dried Coconut 21/20260409_173327.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Elaichi 38/20260409_171931.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/black pepper 63/20260409_163133.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Elaichi 38/20260409_171731.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dried Coconut 21/20260409_173404.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170855.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161550.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160420.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/black pepper 63/20260409_162955.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161344.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/black pepper 63/20260409_163439.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dalchini(1) 61/20260409_154129.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174627.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160335(0).jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155737.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155250.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155258.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160532.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155810.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172101.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154952.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174542.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,train
+data/raw/Cumin 58/20260409_153609.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Cumin 58/20260409_153346.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Cumin 58/20260409_153249.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/Cumin 58/20260409_153554.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,train
+data/raw/black pepper 63/20260409_163116.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161118.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154730.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160618.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153810.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171715.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Halkund 35/20260409_171440.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/black pepper 63/20260409_162956.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Halkund 35/20260409_171532.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154533.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170744.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170750.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170828.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154622.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154716.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154606.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Halkund 35/20260409_171534.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170657.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155720.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154316.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155830.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160648.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155841.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160433.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154656.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154914.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172311.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153827.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160600.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172114.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154920.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161049.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155923.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172351.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,train
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173700.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160236.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153944.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155408.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/black pepper 63/20260409_163603.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161013.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Halkund 35/20260409_171504.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Dalchini(1) 61/20260409_154312.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155816.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Halkund 35/20260409_171318.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,train
+data/raw/Elaichi 38/20260409_171937.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161027.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170650.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154837.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154123.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161031.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dalchini 26/20260409_151924.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170703.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_160000.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160309.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_153959.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dried Coconut 21/20260409_173340.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,train
+data/raw/black pepper 63/20260409_163559.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161439.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160546.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dry red chillies(Lavangi) 63/20260409_160524.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170812.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170733.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,train
+data/raw/black pepper 63/20260409_163225.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Dalchini(1) 61/20260409_153916.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155504.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/black pepper 63/20260409_163347.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/black pepper 63/20260409_163238.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,train
+data/raw/Elaichi 38/20260409_171743.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dalchini 26/20260409_151928.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,train
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155847.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,train
+data/raw/Dalchini(1) 61/20260409_154401.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,train
+data/raw/Elaichi 38/20260409_171906.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,train
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155127.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,train
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161132.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,val
+data/raw/Dry red chillies(Lavangi) 63/20260409_160404.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,val
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172258.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,val
+data/raw/black pepper 63/20260409_163609.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,val
+data/raw/black pepper 63/20260409_162851.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,val
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170747.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,val
+data/raw/Halkund 35/20260409_171454.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,val
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154547.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,val
+data/raw/Halkund 35/20260409_171321.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,val
+data/raw/Dalchini(1) 61/20260409_153949.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,val
+data/raw/Dried Coconut 21/20260409_173311.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155833.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/Dalchini(1) 61/20260409_154310.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155826.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/Dry red chillies(Lavangi) 63/20260409_160247.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,val
+data/raw/Halkund 35/20260409_171326.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,val
+data/raw/Dry red chillies(Lavangi) 63/20260409_160754.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,val
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161412.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,val
+data/raw/Halkund 35/20260409_171315.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,val
+data/raw/Dalchini 26/20260409_152009.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,val
+data/raw/Cumin 58/20260409_153339.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,val
+data/raw/Elaichi 38/20260409_171903.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,val
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154902.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,val
+data/raw/Dry red chillies(Lavangi) 63/20260409_160548.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,val
+data/raw/Dalchini 26/20260409_152207.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,val
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170822.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,val
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172156.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,val
+data/raw/Dalchini 26/20260409_152052.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,val
+data/raw/Dried Coconut 21/20260409_173417.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,val
+data/raw/Cumin 58/20260409_153236.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,val
+data/raw/Dry red chillies(Lavangi) 63/20260409_160323.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,val
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161338.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,val
+data/raw/Dalchini 26/20260409_152055.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155822.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173527(0).jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,val
+data/raw/Elaichi 38/20260409_171707.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,val
+data/raw/Elaichi 38/20260409_171910.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,val
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154923.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,val
+data/raw/Dalchini(1) 61/20260409_154436.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,val
+data/raw/black pepper 63/20260409_163606.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,val
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170900.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,val
+data/raw/Dalchini(1) 61/20260409_153840.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,val
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170838.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,val
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173503.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,val
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161420.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155425.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/Elaichi 38/20260409_171833.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155756.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174528.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,val
+data/raw/Halkund 35/20260409_171508.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,val
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155234.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,val
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155754.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,val
+data/raw/black pepper 63/20260409_163556.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,val
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154724.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,val
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172118.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,val
+data/raw/Dried Coconut 21/20260409_173322.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,val
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161613.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,val
+data/raw/Cumin 58/20260409_153611.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,val
+data/raw/Halkund 35/20260409_171442.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,test
+data/raw/Elaichi 38/20260409_171825.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,test
+data/raw/Dalchini(1) 61/20260409_154143.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161330.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,test
+data/raw/Elaichi 38/20260409_171855.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,test
+data/raw/Halkund 35/20260409_171559.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,test
+data/raw/Dalchini(1) 61/20260409_154416.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161042.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,test
+data/raw/Dalchini(1) 61/20260409_153900.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_155229.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,test
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170651.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,test
+data/raw/Dried Coconut 21/20260409_173335.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,test
+data/raw/Dalchini(1) 61/20260409_154319.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160331.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/black pepper 63/20260409_163401.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,test
+data/raw/Dried Coconut 21/20260409_173424.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160226.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160230.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154908.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,test
+data/raw/Halkund 35/20260409_171345.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,test
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161534(0).jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,test
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155628.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160444.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/Dalchini 26/20260409_152327.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,test
+data/raw/black pepper 63/20260409_163013.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,test
+data/raw/Elaichi 38/20260409_171913.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,test
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170715.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,test
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155433.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,test
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174537.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,test
+data/raw/Elaichi Dana(Cardamom Seeds) 38/20260409_173747.jpg,Elaichi Dana(Cardamom Seeds) 38,elaichi_dana,cardamom,green_cardamom,loose_seeds,test
+data/raw/black pepper 63/20260409_162848.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,test
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155524.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,test
+data/raw/Elaichi 38/20260409_171853.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,test
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154544.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,test
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172321.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,test
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170654.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,test
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154613.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,test
+data/raw/Halkund 35/20260409_171406.jpg,Halkund 35,halkund,turmeric,whole_rhizome,root,test
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155406.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,test
+data/raw/Cumin 58/20260409_153349.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160627.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/Elaichi 38/20260409_171920.jpg,Elaichi 38,elaichi_pod,cardamom,green_cardamom,whole_pod,test
+data/raw/Dried Coconut 21/20260409_173351.jpg,Dried Coconut 21,dried_coconut,coconut,standard,pieces,test
+data/raw/black pepper 63/20260409_163148.jpg,black pepper 63,black_pepper,pepper,standard,whole_seed,test
+data/raw/Dalchini(1) 61/20260409_153955.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Black cardamom(Badi Elaichi) 38/20260409_172305.jpg,Black cardamom(Badi Elaichi) 38,black_cardamom,cardamom,badi_elaichi,whole_pod,test
+data/raw/Cumin 58/20260409_153321.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,test
+data/raw/Dry red chillies(Lavangi) 63/20260409_160318.jpg,Dry red chillies(Lavangi) 63,chilli_lavangi,dry_red_chilli,lavangi,whole_pod,test
+data/raw/Dry red chillies(Byadgi or Bedgi) 69/20260409_155413.jpg,Dry red chillies(Byadgi or Bedgi) 69,chilli_byadgi,dry_red_chilli,byadgi,whole_pod,test
+data/raw/Dagad Phool (Black Stone Flower) 28/20260409_170905.jpg,Dagad Phool (Black Stone Flower) 28,dagad_phool,lichen,standard,dried_flower,test
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161316.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,test
+data/raw/Dalchini(1) 61/20260409_153951.jpg,Dalchini(1) 61,dalchini,cinnamon,cassia,bark,test
+data/raw/Cumin 58/20260409_153516.jpg,Cumin 58,cumin,cumin,jeera,whole_seed,test
+data/raw/Dalchini 26/20260409_152324.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Guntur Sannam) 86/20260409_161611.jpg,Dry red chillies(Guntur Sannam) 86,chilli_guntur,dry_red_chilli,guntur_sannam,whole_pod,test
+data/raw/Dhaniya(Coriander Seeds) 13/20260409_174630.jpg,Dhaniya(Coriander Seeds) 13,dhaniya,coriander,standard,whole_seed,test
+data/raw/Dalchini 26/20260409_152235.jpg,Dalchini 26,dalchini,cinnamon,cassia,bark,test
+data/raw/Dry red chillies(Sankeshwari) 74/20260409_154850.jpg,Dry red chillies(Sankeshwari) 74,chilli_sankeshwari,dry_red_chilli,sankeshwari,whole_pod,test

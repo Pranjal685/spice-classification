@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Verification API</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Smooth scroll Lenis -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Spice Identification</h1>
+                <span class="status-pill">API Online</span>
+            </div>
+            <div class="header-right">
+                <span class="model-badge" id="telemetry-pill">ONNX MobileNetV3-Small <span class="latency">| sub-15ms</span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="workspace">
+        <section class="panel left-panel">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Upload & Verification</h2>
+                </div>
+                
+                <div class="upload-container" id="upload-container">
+                    <div class="drop-zone" id="drop-zone">
+                        <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" hidden>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                        <p>Click or drag image to upload</p>
+                        <small>JPG, PNG, WEBP up to 10MB</small>
+                    </div>
+                </div>
+
+                <div class="image-preview" id="image-preview-container" style="display: none;">
+                    <div class="preview-wrapper">
+                        <!-- Before/After Slider -->
+                        <div class="comparison-container" id="comparison-container">
+                            <img id="preview-img" class="original-img" src="" alt="Original Input">
+                            <div class="heatmap-layer" id="heatmap-layer" style="width: 100%;">
+                                <img id="heatmap-img" class="heatmap-img" src="" alt="Grad-CAM Heatmap">
+                            </div>
+                            <input type="range" class="comparison-slider" id="comparison-slider" min="0" max="100" value="50" style="display: none;">
+                            <div class="comparison-handle" id="comparison-handle" style="display: none; left: 50%;">
+                                <div class="badge">⇄</div>
+                            </div>
+                        </div>
+                        <button class="pill-btn replace-img-btn" id="replace-img-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                            Replace Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <label>
+                            <span>Confidence Threshold</span>
+                            <span id="threshold-val" class="mono">75%</span>
+                        </label>
+                        <div class="slider-wrapper">
+                            <input type="range" class="styled-slider" id="threshold" min="0" max="100" value="75" style="--slider-pct: 75%;">
+                            <div class="slider-markers">
+                                <span>[&lt; 75% Tier-2 Fallback]</span>
+                                <span>[&ge; 75% Confident]</span>
+                            </div>
+                            <div class="slider-boundary-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group checkbox-group">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="force-fallback">
+                            <span class="checkmark"></span>
+                            Force Tier-2 Multimodal Fallback
+                        </label>
+                    </div>
+                    
+                    <button class="btn-primary" id="analyze-btn" disabled>Analyze & Verify</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel right-panel">
+            <div class="card" id="results-card" style="display: none;">
+                <div class="results-header">
+                    <span id="tier-badge" class="badge"></span>
+                    <span id="confidence-meter" class="confidence mono"></span>
+                </div>
+
+                <div id="metadata-section">
+                    <h3 id="spice-name" class="spice-title"></h3>
+                    <div class="specs-grid" id="specs-table">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <div id="attribution-section" class="attribution" style="display: none;">
+                    <h4>Model Attribution</h4>
+                    <p id="attribution-text"></p>
+                </div>
+
+                <div class="distribution-section">
+                    <h4>Top-3 Probability Distribution</h4>
+                    <div class="bar-chart" id="prob-bars"></div>
+                </div>
+                
+                <div class="json-actions">
+                    <button class="json-copy-btn" id="json-copy-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        Copy API JSON
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Skeleton Empty / Loading State -->
+            <div class="card skeleton-state" id="empty-state">
+                <div class="skeleton-header">
+                    <div class="skeleton-badge"></div>
+                    <div class="skeleton-conf"></div>
+                </div>
+                <div class="skeleton-title"></div>
+                <div class="skeleton-grid">
+                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val"></div></div>
+                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val" style="width:80%"></div></div>
+                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val" style="width:90%"></div></div>
+                </div>
+                <div class="skeleton-bars">
+                    <div class="skel-bar"></div>
+                    <div class="skel-bar" style="width: 60%"></div>
+                    <div class="skel-bar" style="width: 40%"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

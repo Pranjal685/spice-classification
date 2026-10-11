@@ -161,7 +161,16 @@ async def classify(
             },
             "top_3": top_3,
             "metadata": kb_entry,
-            "latency_ms": inference_time_ms
+            "latency_ms": inference_time_ms,
+            "model_parameters": {
+                "backbone": "MobileNetV3-Small",
+                "runtime_engine": "ONNX Runtime (CPUExecutionProvider)",
+                "input_tensor_shape": "1 × 3 × 224 × 224",
+                "normalization": "ImageNet (Mean: [0.485, 0.456, 0.406], Std: [0.229, 0.224, 0.225])",
+                "decision_boundary": f"{int(threshold * 100)}%",
+                "feature_extractor_layer": "model.features[-1] (576 channels)",
+                "active_classes_count": 14
+            }
         }
     else:
         # Tier-2
@@ -188,7 +197,13 @@ async def classify(
                 "top_1_prob": top_1_prob,
                 "top_3": top_3
             },
-            "latency_ms": fallback_time_ms
+            "latency_ms": fallback_time_ms,
+            "model_parameters": {
+                "backbone": "MobileNetV3-Small (Tier-1) + Gemini 2.5 Flash (Tier-2)",
+                "runtime_engine": "Hybrid (ONNX Runtime + Multimodal Gemini Vision)",
+                "decision_boundary": f"{int(threshold * 100)}% (Fallback Triggered)",
+                "active_classes_count": 14
+            }
         }
 
 @app.post("/api/v1/explain")
@@ -212,7 +227,7 @@ async def explain(
             except ValueError:
                 actual_idx = None
 
-    blended_bgr, pred_idx, conf = generate_gradcam(
+    blended_bgr, pred_idx, conf, raw_colormap = generate_gradcam(
         SystemState.cam_model, 
         img, 
         SystemState.device, 
@@ -220,6 +235,7 @@ async def explain(
     )
     
     b64_image = encode_image_base64(blended_bgr)
+    b64_thermal = encode_image_base64(raw_colormap)
     
     pred_class = SystemState.idx_to_class[pred_idx]
     disp_name = SystemState.knowledge_base.get(pred_class, {}).get("display_name", pred_class)
@@ -228,7 +244,16 @@ async def explain(
         "class_id": pred_class,
         "display_name": disp_name,
         "confidence": conf,
-        "heatmap_base64": b64_image
+        "heatmap_base64": b64_image,
+        "thermal_base64": b64_thermal,
+        "xai_parameters": {
+            "method": "Grad-CAM (Gradient-weighted Class Activation Mapping)",
+            "target_layer": "model.features[-1] (Final InvertedResidual Block)",
+            "feature_channels": 576,
+            "input_resolution": "224x224x3 (ImageNet RGB Normalized)",
+            "colormap": "OpenCV COLORMAP_JET (Thermal Pseudo-Color)",
+            "backbone": "MobileNetV3-Small"
+        }
     }
 
 STATIC_DIR.mkdir(exist_ok=True, parents=True)

@@ -123,7 +123,7 @@ class SpiceFallbackEngine:
     def __init__(self):
         keys_env = os.environ.get("GEMINI_API_KEYS", "") or os.environ.get("GEMINI_API_KEY", "")
         self.api_keys = [k.strip() for k in keys_env.split(",") if k.strip() and k.strip() != "your_gemini_api_key_here"]
-        self.candidate_models = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-3.5-flash"]
+        self.candidate_models = ["gemini-2.5-flash", "gemini-flash-latest"]
         self.model_name = self.candidate_models[0]
         self._clients = []
         self._current_client_idx = 0
@@ -203,6 +203,10 @@ class SpiceFallbackEngine:
                             system_instruction=_SYSTEM_PROMPT,
                             temperature=0.1,
                             max_output_tokens=2048,
+                            http_options=types.HttpOptions(
+                                timeout=5000,
+                                retry_options=types.HttpRetryOptions(attempts=1),
+                            ),
                         ),
                     )
                     self.model_name = model

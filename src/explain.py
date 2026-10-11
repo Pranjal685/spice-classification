@@ -114,7 +114,7 @@ def generate_gradcam(
     activations = None
     gradients = None
     
-    return blended, target_class_idx, confidence
+    return blended, target_class_idx, confidence, colormap
 
 def encode_image_base64(img_bgr: np.ndarray) -> str:
     """Encodes BGR numpy array to Base64 JPEG."""

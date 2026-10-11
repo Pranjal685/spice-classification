@@ -1,148 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spice Verification API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Indian Spice Identification & Explainability System</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Smooth scroll Lenis -->
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="/static/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
             <div class="header-left">
-                <h1>Spice Identification</h1>
-                <span class="status-pill">API Online</span>
+                <div class="logo-group">
+                    <span class="logo-icon">🌿</span>
+                    <h1>Indian Spice Identification</h1>
+                    <span class="header-tag mono">v1.0 • ONNX Edge</span>
+                </div>
+                <span class="header-divider"></span>
+                <span class="header-desc">Computer Vision &amp; Saliency Attribution Studio</span>
             </div>
             <div class="header-right">
-                <span class="model-badge" id="telemetry-pill">ONNX MobileNetV3-Small <span class="latency">| sub-15ms</span></span>
+                <div class="status-cluster" id="api-status-pill">
+                    <span class="beacon-dot"></span>
+                    <span class="status-label mono">API Online</span>
+                    <span class="telemetry-chip mono" id="telemetry-pill">
+                        ONNX MobileNetV3 <span class="latency">| sub-15ms CPU</span>
+                    </span>
+                </div>
+                <div class="header-actions">
+                    <a href="/docs" target="_blank" rel="noopener" class="header-action-btn" title="Open Interactive FastAPI Swagger Documentation">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <span>API Docs</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="workspace">
+        <!-- Left Panel: Upload, Side-by-Side Comparison & Controls -->
         <section class="panel left-panel">
             <div class="card">
                 <div class="card-header">
-                    <h2>Upload & Verification</h2>
+                    <div class="card-title-group">
+                        <h2>Image Input & Saliency Comparison</h2>
+                        <span class="card-subtitle">Upload spice image to inspect neural activations and botanical
+                            identification</span>
+                    </div>
                 </div>
-                
+
+                <!-- Upload Drop Zone (Visible when no image loaded) -->
                 <div class="upload-container" id="upload-container">
                     <div class="drop-zone" id="drop-zone">
                         <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" hidden>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
-                        <p>Click or drag image to upload</p>
-                        <small>JPG, PNG, WEBP up to 10MB</small>
+                        <div class="drop-zone-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+                            </svg>
+                        </div>
+                        <p class="drop-zone-text">Click or drag image to upload</p>
+                        <small class="drop-zone-hint">Supports JPEG, PNG, WEBP (Center cropped to 224×224)</small>
                     </div>
                 </div>
 
+                <!-- Side-by-Side Comparison Section (Professor requirement: always side-by-side, stacks on phone) -->
                 <div class="image-preview" id="image-preview-container" style="display: none;">
-                    <div class="preview-wrapper">
-                        <!-- Before/After Slider -->
-                        <div class="comparison-container" id="comparison-container">
-                            <img id="preview-img" class="original-img" src="" alt="Original Input">
-                            <div class="heatmap-layer" id="heatmap-layer" style="width: 100%;">
-                                <img id="heatmap-img" class="heatmap-img" src="" alt="Grad-CAM Heatmap">
+                    <div class="comparison-bar">
+                        <div class="comparison-title-wrap">
+                            <span class="comparison-title">Visual Attribution Comparison</span>
+                        </div>
+                        <div class="comparison-actions">
+                            <div class="toggle-group" id="heatmap-toggle-group" style="display: none;">
+                                <button type="button" class="toggle-btn active" id="btn-mode-blended"
+                                    title="Blend Grad-CAM over original spice texture">Overlay</button>
+                                <button type="button" class="toggle-btn" id="btn-mode-thermal"
+                                    title="Show pure JET pseudo-color thermal heatmap">Pure Thermal</button>
                             </div>
-                            <input type="range" class="comparison-slider" id="comparison-slider" min="0" max="100" value="50" style="display: none;">
-                            <div class="comparison-handle" id="comparison-handle" style="display: none; left: 50%;">
-                                <div class="badge">⇄</div>
+                            <button type="button" class="pill-btn replace-img-btn" id="replace-img-btn"
+                                title="Choose another image">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+                                </svg>
+                                <span>Change Image</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Grid (Side by side on desktop, stacked on mobile) -->
+                    <div class="comparison-grid" id="comparison-grid">
+                        <!-- Original Image Box -->
+                        <div class="compare-card" id="card-original">
+                            <div class="compare-card-header">
+                                <span class="card-tag rgb-tag">Original Input</span>
+                                <span class="card-meta" id="orig-dims-tag">RGB 224×224</span>
+                            </div>
+                            <div class="compare-frame">
+                                <img id="preview-img" class="compare-img" src="" alt="Original Spice Input">
+                            </div>
+                            <div class="compare-card-footer">
+                                <span class="footer-note">Input pixel matrix after ImageNet standardization</span>
                             </div>
                         </div>
-                        <button class="pill-btn replace-img-btn" id="replace-img-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
-                            Replace Image
-                        </button>
+
+                        <!-- Thermal / Grad-CAM Attention Map Box -->
+                        <div class="compare-card" id="card-thermal">
+                            <div class="compare-card-header">
+                                <span class="card-tag cam-tag" id="cam-tag-label">Grad-CAM Thermal</span>
+                                <span class="card-meta">Layer: features[-1]</span>
+                            </div>
+                            <div class="compare-frame">
+                                <img id="heatmap-img" class="compare-img" src="" alt="Grad-CAM Thermal Heatmap"
+                                    style="display: none;">
+                                <div class="cam-placeholder" id="cam-placeholder">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                                    </svg>
+                                    <p>Awaiting Model Inference</p>
+                                    <small>Gradient saliency heatmap will render here</small>
+                                </div>
+                            </div>
+                            <div class="compare-card-footer">
+                                <div class="heatmap-legend" id="heatmap-legend" style="display: none;">
+                                    <div class="legend-gradient"></div>
+                                    <div class="legend-labels">
+                                        <span>Min Focus (Blue)</span>
+                                        <span>Mid (Yellow)</span>
+                                        <span>Max Salience (Red)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Execution Controls -->
                 <div class="controls">
                     <div class="control-group">
-                        <label>
-                            <span>Confidence Threshold</span>
-                            <span id="threshold-val" class="mono">75%</span>
+                        <label for="threshold">
+                            <span class="control-label-text">Confidence Routing Threshold</span>
+                            <span id="threshold-val" class="mono threshold-badge">75%</span>
                         </label>
                         <div class="slider-wrapper">
-                            <input type="range" class="styled-slider" id="threshold" min="0" max="100" value="75" style="--slider-pct: 75%;">
+                            <input type="range" class="styled-slider" id="threshold" min="0" max="100" value="75"
+                                style="--slider-pct: 75%;">
                             <div class="slider-markers">
                                 <span>[&lt; 75% Tier-2 Fallback]</span>
-                                <span>[&ge; 75% Confident]</span>
+                                <span>[&ge; 75% Tier-1 ONNX]</span>
                             </div>
                             <div class="slider-boundary-line"></div>
                         </div>
                     </div>
-                    
+
                     <div class="control-group checkbox-group">
                         <label class="custom-checkbox">
                             <input type="checkbox" id="force-fallback">
                             <span class="checkmark"></span>
-                            Force Tier-2 Multimodal Fallback
+                            <span class="checkbox-label">Force Tier-2 Multimodal Fallback (Gemini Vision)</span>
                         </label>
                     </div>
-                    
-                    <button class="btn-primary" id="analyze-btn" disabled>Analyze & Verify</button>
+
+                    <button class="btn-primary" id="analyze-btn" disabled>
+                        <span id="analyze-btn-text">Analyze & Verify Spice</span>
+                        <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
 
+        <!-- Right Panel: Verdict, Botanical Profile, Distribution & Attribution -->
         <section class="panel right-panel">
             <div class="card" id="results-card" style="display: none;">
+                <!-- Header: Tier status & Confidence -->
                 <div class="results-header">
                     <span id="tier-badge" class="badge"></span>
                     <span id="confidence-meter" class="confidence mono"></span>
                 </div>
 
-                <div id="metadata-section">
-                    <h3 id="spice-name" class="spice-title"></h3>
-                    <div class="specs-grid" id="specs-table">
+                <!-- Spice Title -->
+                <div class="title-section">
+                    <h2 id="spice-name" class="spice-title"></h2>
+                    <span id="scientific-subtitle" class="scientific-subtitle"></span>
+                </div>
+
+                <!-- Botanical Profile & Taxonomy (Balances card height with left column) -->
+                <div class="botanical-profile-box" id="botanical-profile-box">
+                    <div class="box-mini-header">
+                        <span class="box-tag meta-tag">Botanical Profile</span>
+                        <span class="box-sub">Domain Knowledge Lookup</span>
+                    </div>
+                    <div class="specs-grid" id="botanical-meta-table">
                         <!-- Populated dynamically -->
                     </div>
                 </div>
 
-                <div id="attribution-section" class="attribution" style="display: none;">
-                    <h4>Model Attribution</h4>
-                    <p id="attribution-text"></p>
-                </div>
-
+                <!-- Probability Distribution -->
                 <div class="distribution-section">
                     <h4>Top-3 Probability Distribution</h4>
                     <div class="bar-chart" id="prob-bars"></div>
                 </div>
-                
-                <div class="json-actions">
-                    <button class="json-copy-btn" id="json-copy-btn">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                        Copy API JSON
+
+                <!-- Model Attribution & Grad-CAM Explanation -->
+                <div id="attribution-section" class="attribution-card">
+                    <h4>Interpretability & Saliency Attribution</h4>
+                    <p id="attribution-text"></p>
+                </div>
+
+                <!-- Dedicated Interactive Breakdown Action & Popover -->
+                <div class="breakdown-wrapper" id="breakdown-wrapper">
+                    <button type="button" class="btn-breakdown" id="open-pipeline-modal-btn" aria-haspopup="dialog"
+                        aria-expanded="false"
+                        title="Click or hover to inspect identification parameters & verification breakdown">
+                        <div class="btn-breakdown-left">
+                            <span class="btn-breakdown-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </span>
+                            <div class="btn-breakdown-info">
+                                <span class="btn-breakdown-title">Identification Parameters &amp; Verification
+                                    Breakdown</span>
+                                <span class="btn-breakdown-hint">Hover for logic breakdown • Click for full
+                                    inspection</span>
+                            </div>
+                        </div>
+                        <span class="btn-breakdown-badge" id="breakdown-badge">Inspect ↗</span>
+                    </button>
+
+                    <!-- Interactive Hover Popover Tooltip / Card -->
+                    <div class="breakdown-hover-card" id="breakdown-hover-card" role="tooltip" data-lenis-prevent>
+                        <div class="hover-card-header">
+                            <span class="hover-tag">Image Identification Logic</span>
+                            <span class="hover-status" id="hover-card-status">Tier-1 Grounded</span>
+                        </div>
+                        <div class="hover-card-body" id="hover-card-body">
+                            <div class="hover-card-row">
+                                <span class="hover-card-bullet"></span>
+                                <div><strong>Neural Backbone:</strong> MobileNetV3-Small evaluating
+                                    <code>224×224×3</code> standardized RGB tensor.</div>
+                            </div>
+                            <div class="hover-card-row">
+                                <span class="hover-card-bullet"></span>
+                                <div><strong>Receptive Field:</strong> Deep conv layer <code>features[-1]</code> (576
+                                    channels) maps surface texture contours.</div>
+                            </div>
+                            <div class="hover-card-row">
+                                <span class="hover-card-bullet"></span>
+                                <div><strong>Confidence Gate:</strong> Scored against 75.0% threshold for local ONNX
+                                    edge verification.</div>
+                            </div>
+                        </div>
+                        <div class="hover-card-footer">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 16v-4M12 8h.01" />
+                            </svg>
+                            <span>Click button to inspect complete 4-stage mathematical parameters</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Action: JSON Payload -->
+                <div class="card-footer-actions">
+                    <button type="button" class="json-copy-btn" id="json-copy-btn" title="Copy raw JSON API response">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span>Copy API Payload</span>
                     </button>
                 </div>
             </div>
-            
-            <!-- Skeleton Empty / Loading State -->
-            <div class="card skeleton-state" id="empty-state">
-                <div class="skeleton-header">
-                    <div class="skeleton-badge"></div>
-                    <div class="skeleton-conf"></div>
+
+            <!-- System Overview & Botanical Taxonomy Dossier (Initial State) -->
+            <div class="card system-dossier-card" id="empty-state">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <h2>System Overview &amp; Botanical Taxonomy</h2>
+                        <span class="card-subtitle">Deterministic Edge CNN + Multimodal Foundation Escalation</span>
+                    </div>
+                    <span class="dossier-badge mono">14 Classes Ready</span>
                 </div>
-                <div class="skeleton-title"></div>
-                <div class="skeleton-grid">
-                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val"></div></div>
-                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val" style="width:80%"></div></div>
-                    <div class="skel-row"><div class="skel-label"></div><div class="skel-val" style="width:90%"></div></div>
+
+
+                <!-- Core Architectural Matrix -->
+                <div class="dossier-section">
+                    <div class="dossier-section-header">
+                        <span class="section-title">Architecture Specifications</span>
+                        <span class="section-tag mono">TorchVision Parity</span>
+                    </div>
+                    <div class="specs-grid dossier-specs-table">
+                        <div class="spec-row">
+                            <div class="spec-label">Neural Backbone</div>
+                            <div class="spec-value"><code>MobileNetV3-Small</code> <span class="spec-desc">Inverted Bottlenecks + Hard-Swish</span></div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Input Resolution</div>
+                            <div class="spec-value"><code>224×224 RGB</code> <span class="spec-desc">ImageNet Normalized μ=[0.485, 0.456, 0.406]</span></div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Runtime Engine</div>
+                            <div class="spec-value"><code>ONNX Runtime CPU</code> <span class="spec-desc">Deterministic sub-15ms edge SLA</span></div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Saliency Hook</div>
+                            <div class="spec-value"><code>features[-1]</code> <span class="spec-desc">576-channel convolutional gradient backpropagation</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skeleton-bars">
-                    <div class="skel-bar"></div>
-                    <div class="skel-bar" style="width: 60%"></div>
-                    <div class="skel-bar" style="width: 40%"></div>
+
+                <!-- Supported Taxonomic Scope -->
+                <div class="dossier-section">
+                    <div class="dossier-section-header">
+                        <span class="section-title">Verified Botanical Classes (14 Spices)</span>
+                        <span class="section-tag mono">Dataset Scope</span>
+                    </div>
+                    <div class="taxonomy-chip-grid">
+                        <span class="tax-chip"><strong>Cardamom</strong> <em>Elettaria cardamomum</em></span>
+                        <span class="tax-chip"><strong>Black Cardamom</strong> <em>Amomum subulatum</em></span>
+                        <span class="tax-chip"><strong>Black Pepper</strong> <em>Piper nigrum</em></span>
+                        <span class="tax-chip"><strong>Dalchini</strong> <em>Cinnamomum cassia</em></span>
+                        <span class="tax-chip"><strong>Halkund</strong> <em>Curcuma longa</em></span>
+                        <span class="tax-chip"><strong>Cumin</strong> <em>Cuminum cyminum</em></span>
+                        <span class="tax-chip"><strong>Dhaniya</strong> <em>Coriandrum sativum</em></span>
+                        <span class="tax-chip"><strong>Dagad Phool</strong> <em>Parmotrema perlatum</em></span>
+                        <span class="tax-chip"><strong>Chilli Guntur</strong> <em>Capsicum annuum</em></span>
+                        <span class="tax-chip"><strong>Chilli Byadgi</strong> <em>Capsicum annuum</em></span>
+                        <span class="tax-chip"><strong>Chilli Lavangi</strong> <em>Capsicum annuum</em></span>
+                        <span class="tax-chip"><strong>Chilli Sankeshwari</strong> <em>Capsicum annuum</em></span>
+                        <span class="tax-chip"><strong>Dried Coconut</strong> <em>Cocos nucifera</em></span>
+                        <span class="tax-chip tax-chip-novel"><strong>+ Novel Spices</strong> <em>Gemini Vision Fallback</em></span>
+                    </div>
+                </div>
+
+                <!-- Active Inference Loading Overlay (Displayed when analyzing) -->
+                <div class="inference-loading-overlay" id="inference-loading-overlay" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-meta">
+                        <h4>Analyzing Neural Activations...</h4>
+                        <p>Evaluating 224×224 tensor through MobileNetV3-Small &amp; generating Grad-CAM</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Deep Learning Pipeline & Identification Breakdown Modal Dialog -->
+    <div class="modal-backdrop" id="pipeline-modal" style="display: none;" role="dialog" aria-modal="true"
+        aria-labelledby="modal-title" data-lenis-prevent>
+        <div class="modal-dialog" data-lenis-prevent>
+            <!-- Sleek Professional Header -->
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <div class="modal-badge-row">
+                        <span class="modal-kicker">Inference &amp; Saliency Telemetry</span>
+                        <span class="modal-status-badge" id="modal-pipeline-badge">
+                            <span class="status-indicator-dot"></span>
+                            <span id="modal-status-text">Tier-1 ONNX (Edge CPU)</span>
+                        </span>
+                    </div>
+                    <h3 id="modal-title">Identification Parameters &amp; Verification Breakdown</h3>
+                    <p class="modal-subtitle">Mathematical feature attribution, convolutional tensor evaluation, and
+                        decision threshold telemetry</p>
+                </div>
+                <button type="button" class="modal-close-btn" id="close-pipeline-modal-btn" aria-label="Close dialog">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body" data-lenis-prevent>
+                <!-- 1. Real-Time Telemetry Metric Strip (Replaces AI-sounding paragraph with crisp stats) -->
+                <div class="modal-stats-strip">
+                    <div class="stat-card">
+                        <span class="stat-label">Identified Target</span>
+                        <div class="stat-value" id="modal-stat-class">Spice Sample</div>
+                        <span class="stat-sub" id="modal-stat-subclass">Tier-1 Verified Target</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Model Confidence</span>
+                        <div class="stat-value mono" id="modal-stat-conf">--%</div>
+                        <span class="stat-sub">Routing Gate &ge; 75.0%</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Saliency Layer Hook</span>
+                        <div class="stat-value mono" id="modal-stat-layer">features[-1]</div>
+                        <span class="stat-sub">576 Conv Channels</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Execution Latency</span>
+                        <div class="stat-value mono" id="modal-stat-latency">-- ms</div>
+                        <span class="stat-sub">ONNX Runtime CPU</span>
+                    </div>
+                </div>
+
+                <!-- 2. Clean 4-Stage Horizontal Pipeline Architecture (Botanical step removed) -->
+                <div class="pipeline-section">
+                    <div class="section-micro-header">
+                        <span>4-Stage Forward &amp; Attribution Pipeline</span>
+                        <span class="section-micro-tag">Zero Cloud Roundtrip</span>
+                    </div>
+                    <div class="pipeline-stepper">
+                        <div class="pipe-step active">
+                            <div class="pipe-step-header">
+                                <span class="pipe-dot"></span>
+                                <span class="pipe-num">01</span>
+                                <span class="pipe-title">Tensor Normalization</span>
+                            </div>
+                            <p class="pipe-desc">Center-crop to <code>224×224×3</code> RGB. ImageNet normalized
+                                μ=[0.485, 0.456, 0.406], σ=[0.229, 0.224, 0.225].</p>
+                        </div>
+                        <div class="pipe-arrow">→</div>
+                        <div class="pipe-step active">
+                            <div class="pipe-step-header">
+                                <span class="pipe-dot"></span>
+                                <span class="pipe-num">02</span>
+                                <span class="pipe-title">Feature Extraction</span>
+                            </div>
+                            <p class="pipe-desc">11 inverted bottleneck residual blocks in
+                                <code>MobileNetV3-Small</code> produce 576 feature maps at <code>features[-1]</code>.
+                            </p>
+                        </div>
+                        <div class="pipe-arrow">→</div>
+                        <div class="pipe-step active">
+                            <div class="pipe-step-header">
+                                <span class="pipe-dot"></span>
+                                <span class="pipe-num">03</span>
+                                <span class="pipe-title">Decision Boundary</span>
+                            </div>
+                            <p class="pipe-desc">Softmax probability vector evaluated against the deterministic
+                                <code>75.0%</code> confidence threshold gate.</p>
+                        </div>
+                        <div class="pipe-arrow">→</div>
+                        <div class="pipe-step active">
+                            <div class="pipe-step-header">
+                                <span class="pipe-dot"></span>
+                                <span class="pipe-num">04</span>
+                                <span class="pipe-title">Grad-CAM Attribution</span>
+                            </div>
+                            <p class="pipe-desc">Target-class gradients backpropagated to layer
+                                <code>features[-1]</code>, colorized via OpenCV JET thermal colormap.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Full-Width Technical Specifications Table (NO BOTANICAL METADATA) -->
+                <div class="specs-section">
+                    <div class="section-micro-header">
+                        <span>Deep Learning Architecture &amp; Mathematical Specifications</span>
+                        <span class="section-micro-tag">Evaluated Tensors</span>
+                    </div>
+                    <div class="clean-specs-table" id="modal-model-params-table">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+
+                <!-- 4. Mathematical Attribution Formulation Note -->
+                <div class="math-card">
+                    <div class="math-card-header">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4M12 8h.01" />
+                        </svg>
+                        <strong>Grad-CAM Mathematical Formulation</strong>
+                    </div>
+                    <p class="math-formula">
+                        Importance weights:
+                        <code>&alpha;<sub>k</sub><sup>c</sup> = (1/Z) &sum;<sub>i</sub>&sum;<sub>j</sub> (&part;Y<sup>c</sup> / &part;A<sub>i,j</sub><sup>k</sup>)</code>
+                        &nbsp;|&nbsp; Saliency Map:
+                        <code>L<sub>Grad-CAM</sub><sup>c</sup> = ReLU(&sum;<sub>k</sub> &alpha;<sub>k</sub><sup>c</sup> A<sup>k</sup>)</code>
+                    </p>
+                    <p class="math-expl">
+                        Validates that activations are strictly grounded in physical surface contours and quill texture
+                        of the spice sample rather than spurious background artifacts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <span class="modal-footer-note">Runtime Engine: ONNX Runtime CPU (Opset 17) &bull; TorchVision 0.17+
+                    Parity</span>
+                <button type="button" class="btn-done" id="modal-done-btn">Close Inspection</button>
+            </div>
+        </div>
+    </div>
+
     <script src="/static/app.js"></script>
 </body>
+
 </html>

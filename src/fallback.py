@@ -204,7 +204,7 @@ class SpiceFallbackEngine:
                             temperature=0.1,
                             max_output_tokens=2048,
                             http_options=types.HttpOptions(
-                                timeout=5000,
+                                timeout=30000,
                                 retry_options=types.HttpRetryOptions(attempts=1),
                             ),
                         ),
